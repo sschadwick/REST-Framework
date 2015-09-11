@@ -4,7 +4,7 @@
   "description": "A helpful REST framework for node.js",
   "main": "index.js",
   "directories": {
-    "test": "test"
+    "test": "./node_modules/mocha/bin/mocha"
   },
   "scripts": {
     "test": "mocha",
@@ -19,7 +19,10 @@
     "framework",
     "node"
   ],
-  "author": "Steven Chadwick sschadwick@gmail.com",
+  "author": {
+    "name": "Steven Chadwick",
+    "email": "sschadwick@gmail.com",
+  }
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/sschadwick/REST-Framework/issues"
@@ -33,3 +36,17 @@
     "mocha": "^2.3.2"
   }
 }
+
+"author": {
+    "name": "Gregory Irwin",
+    "email": "greg.irwin@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Steven Chadwick",
+      "email": "sschadwick@gmail.com"
+    },
+    {
+      "name": "Kasim Siddiqui",
+      "email": "kasimsiddiqui@gmail.com"
+    },
