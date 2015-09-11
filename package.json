@@ -22,7 +22,7 @@
   "author": {
     "name": "Steven Chadwick",
     "email": "sschadwick@gmail.com",
-  },
+  }
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/sschadwick/REST-Framework/issues"
