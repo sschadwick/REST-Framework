@@ -1,7 +1,7 @@
 'use strict';
 
 var chai = require('chai');
-var exepct = chai.expect;
+var expect = chai.expect;
 var chaihttp = require('chai-http');
 
 var del = require('../lib/delete');
@@ -21,9 +21,9 @@ describe('POST request', function() {
       expect(err).to.be(null);
       expect(res).to.have.status(200);
 
-    })
-  })
-})
+    });
+  });
+});
 
 describe('GET request', function() {
   it('should respond to a GET request', function() {
@@ -33,9 +33,9 @@ describe('GET request', function() {
       expect(err).to.be(null);
       expect(res).to.have.status(200);
 
-    })
-  })
-})
+    });
+  });
+});
 
 describe('PUT request', function() {
   it('should respond to a PUT request', function() {
@@ -46,9 +46,9 @@ describe('PUT request', function() {
       expect(err).to.be(null);
       expect(res).to.have.status(200);
 
-    })
-  })
-})
+    });
+  });
+});
 
 describe('PATCH request', function() {
   it('should respond to a PATCH request', function() {
@@ -59,9 +59,9 @@ describe('PATCH request', function() {
       expect(err).to.be(null);
       expect(res).to.have.status(200);
 
-    })
-  })
-})
+    });
+  });
+});
 
 describe('DELETE request', function() {
   it('should respond to a DELETE request', function() {
@@ -71,6 +71,6 @@ describe('DELETE request', function() {
       expect(err).to.be(null);
       expect(res).to.have.status(200);
 
-    })
-  })
-})
+    });
+  });
+});
