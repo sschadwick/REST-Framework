@@ -2,7 +2,7 @@
 
 var http = require('http');
 var Router = require('./lib/router');
-var router = Router();
+var router = new Router();
 var fs = require('fs');
 
 router.get('/someroute', function(req, res) {
