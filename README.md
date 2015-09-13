@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/sschadwick/REST-Framework.svg)](https://travis-ci.org/sschadwick/REST-Framework)
 
+https://www.npmjs.com/package/rest-stop-framework
+
 This is a REST framework for a server using Node.js
 
 This framework is intended to simplify the creation of a node server through easy route creation and REST verb definition. The package can be installed via ```npm install rest-framework```
