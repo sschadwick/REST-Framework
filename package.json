@@ -1,5 +1,5 @@
 {
-  "name": "rest-framework",
+  "name": "rest-stop-framework",
   "version": "0.1.0",
   "description": "a RESTful framework for node.js",
   "main": "index.js",
