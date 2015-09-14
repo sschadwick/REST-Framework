@@ -1,6 +1,6 @@
 'use strict';
 
-var app = require('./index.js');
+var app = require('../index.js');
 var textContent = { "Content-Type": "plain/text" };
 
 app.get('/', function(req, res) {
