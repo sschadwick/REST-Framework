@@ -10,7 +10,8 @@ Require the package into your project:
 ```var app = require('REST-Framework');```
 
 Once this framework is required in to a project, routes can be added using the following syntax:
-```app.addRoute('/someroute', callback);```
+```app.METHOD('/someroute', callback);```
+where method is the http method you want to use
 
 After your routes have been added, your server needs to be started with the syntax:
-```add.createServer(portNumber, callback);```
+```add.createServer(portNumber);```
