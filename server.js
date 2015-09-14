@@ -1,17 +1,11 @@
 'use strict';
 
 var http = require('http');
-var Router = require('./lib/router');
-var router = new Router();
 var fs = require('fs');
 
-router.get('/someroute', function(req, res) {
-
-});
-
-function startServer(port, handlerStack) {
+function startServer(port, route) {
   function onRequest(req, res) {
-
+    route(req, res);
   }
 
   http.createServer(onRequest)
