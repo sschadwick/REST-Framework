@@ -1,5 +1,3 @@
 'use strict';
 
-var server = require('./server');
-var router = require('./lib/router');
-
+module.exports = require('./lib/main');
