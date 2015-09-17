@@ -25,6 +25,17 @@ describe('App test', function() {
 
   it('POST to /foo/testfile', function(done) {
     chai.request(host)
+    .post('/foo/testfile')
+    .send({msg: 'Hello from test POST'})
+    .end(function(err, res) {
+      expect(err).to.eql(null);
+      expect(res.status).to.eql(200);
+      done();
+    });
+  });
+
+  it('POST to /foo/testfile', function(done) {
+    chai.request(host)
       .get('/foo/testfile')
       .end(function(err, res) {
         expect(err).to.eql(null);
@@ -33,7 +44,8 @@ describe('App test', function() {
       });
   });
 
-  it('Should write data to a file', function(done) {
+
+  it('PUT to /foo/testfile', function(done) {
     chai.request(host)
     .put('/foo/testfile')
     .send({msg: 'Hello from test PUT'})
@@ -44,18 +56,7 @@ describe('App test', function() {
     });
   });
 
-  it('Should create a new file and write data to it', function(done) {
-    chai.request(host)
-    .post('/foo/testfile')
-    .send({msg: 'Hello from test POST'})
-    .end(function(err, res) {
-      expect(err).to.eql(null);
-      expect(res.status).to.eql(200);
-      done();
-    });
-  });
-
-  it('Should write data to a file without overwriting its current content', function(done) {
+  it('PATCH to /foo/testfile', function(done) {
     chai.request(host)
     .patch('/foo/testfile')
     .send({msg: 'Hello from test PATCH'})
@@ -66,7 +67,7 @@ describe('App test', function() {
     });
   });
 
-  it('Should delete a file', function(done) {
+  it('DELETE to /foo/testfile', function(done) {
     chai.request(host)
     .delete('/foo/testfile')
     .end(function(err, res) {
