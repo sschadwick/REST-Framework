@@ -20,7 +20,6 @@ describe('POST request', function() {
     .end(function(err, res) {
       expect(err).to.be(null);
       expect(res).to.have.status(200);
-
     });
   });
 });
